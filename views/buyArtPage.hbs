@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 class="secondaryHeader">Buy Art</h2>
+</div> 
+
+ <div class="container">
+     <p>Great ... so all this is coming from my data.json file ...</p>
+</div> 
+
+</div> 
+
+<div class="container ">
+  {{#each artwork}}
+    <div >
+        <a href="/artwork/{{id}}"><img class="imagesBuyArtPage" src="{{image}}" alt="{{name}}"></a>
+        <h3 class="">{{name}}</h3>
+        <h3 class="">{{price}}</h3>
+    </div>
+
+  {{/each}}
+
+</div>
+
+<!-- src="https://avatars.githubusercontent.com/u/{{id}}?s=450"-->

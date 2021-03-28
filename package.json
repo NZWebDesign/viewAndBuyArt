@@ -1,0 +1,27 @@
+{
+  "name": "viewAndBuyArt",
+  "version": "1.0.0",
+  "description": "A repo to practise some of the EDA learnings",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index --ignore data.json",
+    "lint": "eslint .",
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NZWebDesign/viewAndBuyArt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NZWebDesign/viewAndBuyArt/issues"
+  },
+  "homepage": "https://github.com/NZWebDesign/viewAndBuyArt#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1"
+  }
+}

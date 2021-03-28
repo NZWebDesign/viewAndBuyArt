@@ -1,0 +1,23 @@
+{
+    "artwork": [
+      {
+        "id": 1,
+        "name": "Purple Pīwakawaka",
+        "image": "/images/fantail1.jpg",
+        "price": "$110"
+      },
+      {
+        "id": 2,
+        "name": "Yellow Pīwakawaka",
+        "image": "/images/fantail2.jpg",
+        "price": "$110"
+      },
+
+      {
+        "id": 3,
+        "name": "Blue Pīwakawaka",
+        "image": "/images/fantail3.jpg",
+        "price": "$110"
+      }
+    ]
+  }
