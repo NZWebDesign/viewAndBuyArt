@@ -1,14 +1,12 @@
-<div class="container">
+<div class="container inner">
     <h2 class="secondaryHeader">Buy Art</h2>
 </div> 
 
- <div class="container">
+<div class="container inner">
      <p>Great ... so all this is coming from my data.json file ...</p>
 </div> 
 
-</div> 
-
-<div class="container ">
+<div class="container inner ">
   {{#each artwork}}
     <div >
         <a href="/artwork/{{id}}"><img class="imagesBuyArtPage" src="{{image}}" alt="{{name}}"></a>
@@ -20,4 +18,35 @@
 
 </div>
 
-<!-- src="https://avatars.githubusercontent.com/u/{{id}}?s=450"-->
+<hr>
+
+<div class="container inner">
+    <h2>The following discounts apply to the marked price. Please select relevant options.</h2>
+</div>
+
+<div class="container inner">
+    <p> <!--EDA STUDENT DISCOUNT 20% = $88 -->
+    <input type="checkbox" id="edaStudent" name="edaStudent" value="edaStudent">
+    <label for="edaStudent"> EDA student discount</label> <br>
+    </p>
+
+
+    <p> <!--EDA STAFF DISCOUNT 30% = $77 -->
+    <input type="checkbox" id="edaStaff" name="edaStaff" value="edaStaff">
+    <label for="edaStaff"> EDA staff discount</label> <br>
+    </p>
+
+    <p> <!--EDA cool STAFF DISCOUNT - remove $7 = $70 -->
+    <input type="checkbox" id="edaCoolStaff" name="edaCoolStaff" value="edaCoolStaff">
+    <label for="edaCoolStaff"> If you're also a pretty cool person and work at EDA, check for further discount.</label> <br> <br
+    ></p>
+
+
+    <p> <!--EDA Cool Student DISCOUNT - remove $18 = $70 -->
+    <input type="checkbox" id="edaCoolStaff" name="edaCoolStaff" value="edaCoolStaff">
+    <label for="edaCoolStaff"> If you're also a pretty cool person and a student at EDA, check for further discount.</label> <br>
+    </p>
+
+</div>
+
+

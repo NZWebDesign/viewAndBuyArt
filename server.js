@@ -30,8 +30,14 @@ server.get('/buyArtPage', (req,res) => {
 })
 
   //This is rendering contactPage.hbs
+  server.get('/uploadArt', (req,res) => {
+    res.render('uploadMoreArtPage')
+ })
+
+
+  //This is rendering contactPage.hbs
 server.get('/contact', (req,res) => {
-    res.render('contactPage' /*, parsedData*/)
+    res.render('contactPage')
  })
 
 
