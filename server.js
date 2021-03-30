@@ -29,7 +29,7 @@ server.get('/buyArtPage', (req,res) => {
  })
 })
 
-  //This is rendering contactPage.hbs
+  //This is rendering uploadMoreArtPage.hbs
   server.get('/uploadArt', (req,res) => {
     res.render('uploadMoreArtPage')
  })
@@ -38,6 +38,36 @@ server.get('/buyArtPage', (req,res) => {
   //This is rendering contactPage.hbs
 server.get('/contact', (req,res) => {
     res.render('contactPage')
+ })
+
+ 
+ server.post('/uploadMoreArtPage', (req, res) => {
+   // read the current data
+  fs.readFile('./data.json', 'utf-8', (err, existingData) => {
+        if (err) return res.status(500)
+        const parsedData = JSON.parse(existingData)
+
+        //new data coming in
+        const newData = req.body
+
+        // write the new data (req.body)
+        let newArtObj =  {
+          id: parsedData.artwork.length+1,
+          name: newData.name,
+          artist: newData.artist,
+          image: "/images/fantail1.jpg",
+          price: newData.price
+        }
+
+        parsedData.artwork.push(newArtObj)
+
+
+        // write file with the new data
+        fs.writeFile('./data.json', JSON.stringify(parsedData, null, 2), (err) => {
+          if (err) return res.status(500)
+          else res.redirect('/buyArtPage')
+        })
+      })
  })
 
 

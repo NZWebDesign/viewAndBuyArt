@@ -1,3 +1,26 @@
 <div class="container inner">
     <h2>Upload More Art to the Database</h2>
 </div>
+
+<form class="form" action="/uploadMoreArtPage" method="post">
+  <!--<img class="img-circle" src="{{image}}" alt="{{name}}"> -->
+
+  <label for="name" class="form-item">
+    Name:
+    <input type="text" name="name" value="{{name}}">
+  </label>
+  
+  <label for="artist" class="form-item">
+    Artist:
+    <input type="text" name="artist>" value="{{artist}}">
+  </label>
+  
+  <label for="price" class="form-item">
+    Price:
+    <input type="text" name="price" value="{{price}}">
+  </label>
+  
+  
+  
+  <input type="submit" name="" value="Submit">
+</form>
