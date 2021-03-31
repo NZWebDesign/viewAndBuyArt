@@ -7,7 +7,7 @@ const router = express.Router()
   fs.readFile('./data.json', 'utf-8', (err, data) => {
       if (err) return res.status(500)
       const parsedData = JSON.parse(data)
-      console.log(parsedData)
+     // console.log(parsedData)
   res.render('buyArtPage' , parsedData)
 })
 })
