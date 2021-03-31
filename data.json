@@ -50,6 +50,12 @@
       "name": "birdyieeeeee",
       "image": "/images/fantail1.jpg",
       "price": "45000"
+    },
+    {
+      "id": 9,
+      "name": "erwerw",
+      "image": "/images/fantail1.jpg",
+      "price": "234243"
     }
   ]
 }
