@@ -20,42 +20,11 @@
       "artist": "Steve",
       "image": "/images/fantail3.jpg",
       "price": "$110"
-    },
-    {
-      "id": 4,
-      "name": "asd",
-      "image": "/images/fantail1.jpg",
-      "price": "3333"
-    },
-    {
-      "id": 5,
-      "name": "dfgdgdfgdfgdfgfdg",
-      "image": "/images/fantail1.jpg",
-      "price": "3434343434"
-    },
-    {
-      "id": 6,
-      "name": "leah",
-      "image": "/images/fantail1.jpg",
-      "price": "3434343"
-    },
-    {
-      "id": 7,
-      "name": "rrewe",
-      "image": "/images/fantail1.jpg",
-      "price": "3333"
-    },
-    {
-      "id": 8,
-      "name": "birdyieeeeee",
-      "image": "/images/fantail1.jpg",
-      "price": "45000"
-    },
-    {
-      "id": 9,
-      "name": "erwerw",
-      "image": "/images/fantail1.jpg",
-      "price": "234243"
     }
+    
+
+
+
+
   ]
 }
