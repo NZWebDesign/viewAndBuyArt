@@ -21,10 +21,10 @@
 <hr>
 
 <div class="container inner">
-    <h2>The following discounts apply to the marked price. Please select relevant options.</h2>
+    <h2>The following discounts apply to the marked price. Please indicate relevant options with Y/N.</h2>
 </div>
 
-<div class="container inner">
+{{!-- <div class="container inner">
     <p> <!--EDA STUDENT DISCOUNT 20% = $88 -->
     <input type="checkbox" id="edaStudent" name="edaStudent" value="edaStudent">
     <label for="edaStudent"> EDA student discount</label> <br>
@@ -47,6 +47,27 @@
     <label for="edaCoolStaff"> If you're also a pretty cool person and a student at EDA, check for further discount.</label> <br>
     </p>
 
-</div>
+</div> --}}
 
+<div class="inner container">
+  <form class="form" action="/buyArtPage" method="post">
+  
+  <label for="name">
+    EDA student discount:
+    <input type="text" name="studentDiscount" value="{{studentDiscount}}">
+  </label>
+  
+  <label for="artist">
+    EDA staff discount:
+    <input type="text" name="staffDiscount" value="{{staffDiscount}}">
+  </label>
+  
+  <label for="price">
+    Cool Person:
+    <input type="text" name="coolPerson" value="{{coolPerson}}">
+  </label>
+  
+  <input type="submit" name="" value="Submit">
+</form>
+</div>
 
