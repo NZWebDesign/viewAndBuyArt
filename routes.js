@@ -1,6 +1,7 @@
 const express = require('express')
 const fs = require('fs')
 const router = express.Router()
+const thingImported = require('./functions')
  
  //This is rendering buyArtPage.hbs
  router.get('/buyArtPage', (req,res) => {
@@ -72,33 +73,39 @@ console.log("TEST_____", parsedData.artwork[0].price)
 let artPrice = parsedData.artwork[0].price
 console.log("art price: ", artPrice)
 
-if (studentDiscount == "N" || null){
-  console.log("STudent Discount is N")
-}else{
-  console.log("STudent Discount is Y")
-}
+  if (studentDiscount == "N"){
+    console.log("STudent Discount is N")
+    artPrice = artPrice
+  }else if (studentDiscount == "Y"){
+    console.log("STudent Discount is Y")
+//TODO+++++++++++++++++++++ WHY IS artPrice NAN? +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
+    artPrice = thingImported.discountedPrice(artPrice, 10)
+    console.log("DID IT GET HERE____", artPrice)
+  }else{
+    studentDiscount = "N"
+    console.log("STudent Discount is: ", studentDiscount)
+  }
+    
 
+  if (staffDiscount == "N"){
+    console.log("STaff Discount is N")
+  }else if (staffDiscount == "Y"){
+    console.log("STaff Discount is Y")
+  }else{
+    staffDiscount = "N"
+  }
 
-//else do some input error handling
-
-if (staffDiscount == "N" || null){
-  console.log("STaff Discount is N")
-}else{
-  console.log("STaff Discount is Y")
-}
-//else do some input error handling
-if (coolPerson == "N" || null){
-  console.log("Cool Person Discount is N")
-}else{
-  console.log("Cool Person Discount is Y")
-}
-//else do some input error handling  
+  if (coolPerson == "N"){
+    console.log("Cool Person Discount is N")
+  }else if (coolPerson == "Y"){
+    console.log("Cool Person Discount is Y")
+  }else{
+    coolPerson = "N"
+  }
+  
 
 })
 
-
-
-console.log("Your Discounted Price is: ")
  
  res.redirect('/yourPricePage')
  })
