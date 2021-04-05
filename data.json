@@ -20,6 +20,12 @@
       "artist": "Steve",
       "image": "/images/fantail3.jpg",
       "price": "$110"
+    },
+    {
+      "id": 4,
+      "name": "sss",
+      "image": "/images/fantail1.jpg",
+      "price": "3333"
     }
   ]
 }
